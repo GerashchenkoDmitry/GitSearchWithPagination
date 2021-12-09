@@ -28,18 +28,22 @@ struct DetailView: View {
                         .font(.title)
                 }
                 
-                VStack(alignment: .leading, spacing: 5) {
-                    Text("About:")
-                        .font(.title2)
-                    Text(repo.description ?? " Invalid Description")
+                VStack(alignment: .leading, spacing: 20) {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("About:")
+                            .font(.title2)
+                        Text(repo.description ?? " Invalid Description")
+                    }
                     
-                    Text("To Repository:")
-                        .font(.title2)
-                    Text(repo.repoUrl)
-                        .foregroundColor(.blue)
-                        .onTapGesture {
-                            self.presentSefariView = true
-                        }
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text("To Repository:")
+                            .font(.title2)
+                        Text(repo.repoUrl)
+                            .foregroundColor(.blue)
+                            .onTapGesture {
+                                self.presentSefariView = true
+                            }
+                    }
                 }
             }
         }
