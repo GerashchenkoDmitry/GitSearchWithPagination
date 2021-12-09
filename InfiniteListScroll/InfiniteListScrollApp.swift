@@ -11,7 +11,7 @@ import SwiftUI
 struct InfiniteListScrollApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RepositoriesListContainer()
         }
     }
 }

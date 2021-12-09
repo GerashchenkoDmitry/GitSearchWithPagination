@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct RepositoriesListContainer: View {
-  
-  @ObservedObject var viewModel = RepositoriesViewModel()
-  
+    
+    @ObservedObject var viewModel = RepositoriesViewModel()
+    
     var body: some View {
-      RepositoriesList(repos: viewModel.state.repos, isLoading: viewModel.state.canLoadNextPage, onScrolledAtBottom: viewModel.fetchNextPageIfPossible)
-        .onAppear { viewModel.fetchNextPageIfPossible() }
+        NavigationView {
+            VStack {
+                SearchView(
+                    searchText: $viewModel.state.searchText,
+                    onCommitTapped: viewModel.fetchNewRepositories,
+                    onChanged: viewModel.fetchNewRepositories
+                )
+                .zIndex(1)
+                
+                RepositoriesList(repos: viewModel.state.repos, isLoading: viewModel.state.canLoadNextPage, onScrolledAtBottom: viewModel.fetchNextPageIfPossible)
+            }
+            .navigationTitle("Search")
+        }
     }
 }
 

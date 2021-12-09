@@ -8,13 +8,52 @@
 import SwiftUI
 
 struct DetailView: View {
+    
+    @State private var presentSefariView = false
+    
+    let repo: Repository
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            VStack(alignment: .leading, spacing: 12) {
+                
+                VStack(alignment: .center) {
+                    RemoteImage(url: repo.owner.userImage)
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(.gray)
+                        .clipShape(Circle())
+                        .frame(width: geo.size.width, height: geo.size.height * 0.2)
+                      
+                    Text(repo.owner.login)
+                        .font(.title)
+                }
+                
+                VStack(alignment: .leading, spacing: 5) {
+                    Text("About:")
+                        .font(.title2)
+                    Text(repo.description ?? " Invalid Description")
+                    
+                    Text("To Repository:")
+                        .font(.title2)
+                    Text(repo.repoUrl)
+                        .foregroundColor(.blue)
+                        .onTapGesture {
+                            self.presentSefariView = true
+                        }
+                }
+            }
+        }
+        .navigationTitle(repo.name)
+        .padding(.horizontal)
+        .fullScreenCover(isPresented: $presentSefariView) {
+            SafariView(url: URL(string: repo.repoUrl) ?? URL(string: "https://github.com")!)
+        }
     }
+    
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(repo: Repository(id: 1, name: "Repo name", repoUrl: "https://github.com", description: "Some description", stars: 1, language: "Swift", owner: Owner(login: "Login", userImage: "person")))
     }
 }

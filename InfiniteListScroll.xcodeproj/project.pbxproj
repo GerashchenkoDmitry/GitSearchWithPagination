@@ -8,18 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		DF7CA3712757664900F86735 /* InfiniteListScrollApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA3702757664900F86735 /* InfiniteListScrollApp.swift */; };
-		DF7CA3732757664900F86735 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA3722757664900F86735 /* ContentView.swift */; };
 		DF7CA3752757664E00F86735 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7CA3742757664E00F86735 /* Assets.xcassets */; };
 		DF7CA3782757664E00F86735 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF7CA3772757664E00F86735 /* Preview Assets.xcassets */; };
+		DF7CA381275766AE00F86735 /* GithubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA380275766AE00F86735 /* GithubAPI.swift */; };
+		DF7CA3842757674800F86735 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA3832757674800F86735 /* Repository.swift */; };
+		DF7CA38727576B5100F86735 /* RepositoriesLIst.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA38627576B5100F86735 /* RepositoriesLIst.swift */; };
+		DF7CA38A27576DAC00F86735 /* RepositoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA38927576DAC00F86735 /* RepositoryRow.swift */; };
+		DF7CA38D2757701A00F86735 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA38C2757701A00F86735 /* RepositoriesViewModel.swift */; };
+		DF7CA3902758956600F86735 /* RepositoriesListContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA38F2758956600F86735 /* RepositoriesListContainer.swift */; };
+		DF7CA3972758B51F00F86735 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA3962758B51F00F86735 /* SearchView.swift */; };
+		DF7CA39A27595B7A00F86735 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA39927595B7A00F86735 /* DetailView.swift */; };
+		DF7CA39D275960C100F86735 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA39C275960C100F86735 /* RemoteImage.swift */; };
+		DF7CA3A02762947100F86735 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7CA39F2762947100F86735 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF7CA36D2757664900F86735 /* InfiniteListScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteListScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF7CA3702757664900F86735 /* InfiniteListScrollApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteListScrollApp.swift; sourceTree = "<group>"; };
-		DF7CA3722757664900F86735 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF7CA3742757664E00F86735 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF7CA3772757664E00F86735 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF7CA3792757664E00F86735 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7CA380275766AE00F86735 /* GithubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubAPI.swift; sourceTree = "<group>"; };
+		DF7CA3832757674800F86735 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DF7CA38627576B5100F86735 /* RepositoriesLIst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesLIst.swift; sourceTree = "<group>"; };
+		DF7CA38927576DAC00F86735 /* RepositoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryRow.swift; sourceTree = "<group>"; };
+		DF7CA38C2757701A00F86735 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		DF7CA38F2758956600F86735 /* RepositoriesListContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListContainer.swift; sourceTree = "<group>"; };
+		DF7CA3962758B51F00F86735 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		DF7CA39927595B7A00F86735 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DF7CA39C275960C100F86735 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		DF7CA39F2762947100F86735 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +71,10 @@
 			isa = PBXGroup;
 			children = (
 				DF7CA3702757664900F86735 /* InfiniteListScrollApp.swift */,
-				DF7CA3722757664900F86735 /* ContentView.swift */,
+				DF7CA380275766AE00F86735 /* GithubAPI.swift */,
+				DF7CA3932758A57D00F86735 /* View */,
+				DF7CA38C2757701A00F86735 /* RepositoriesViewModel.swift */,
+				DF7CA3832757674800F86735 /* Repository.swift */,
 				DF7CA3742757664E00F86735 /* Assets.xcassets */,
 				DF7CA3792757664E00F86735 /* Info.plist */,
 				DF7CA3762757664E00F86735 /* Preview Content */,
@@ -67,6 +88,20 @@
 				DF7CA3772757664E00F86735 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF7CA3932758A57D00F86735 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF7CA38927576DAC00F86735 /* RepositoryRow.swift */,
+				DF7CA38627576B5100F86735 /* RepositoriesLIst.swift */,
+				DF7CA38F2758956600F86735 /* RepositoriesListContainer.swift */,
+				DF7CA3962758B51F00F86735 /* SearchView.swift */,
+				DF7CA39927595B7A00F86735 /* DetailView.swift */,
+				DF7CA39F2762947100F86735 /* SafariView.swift */,
+				DF7CA39C275960C100F86735 /* RemoteImage.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +173,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7CA3732757664900F86735 /* ContentView.swift in Sources */,
+				DF7CA38A27576DAC00F86735 /* RepositoryRow.swift in Sources */,
+				DF7CA3A02762947100F86735 /* SafariView.swift in Sources */,
+				DF7CA39A27595B7A00F86735 /* DetailView.swift in Sources */,
+				DF7CA3902758956600F86735 /* RepositoriesListContainer.swift in Sources */,
+				DF7CA39D275960C100F86735 /* RemoteImage.swift in Sources */,
+				DF7CA381275766AE00F86735 /* GithubAPI.swift in Sources */,
+				DF7CA38D2757701A00F86735 /* RepositoriesViewModel.swift in Sources */,
+				DF7CA3972758B51F00F86735 /* SearchView.swift in Sources */,
+				DF7CA38727576B5100F86735 /* RepositoriesLIst.swift in Sources */,
 				DF7CA3712757664900F86735 /* InfiniteListScrollApp.swift in Sources */,
+				DF7CA3842757674800F86735 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
