@@ -12,32 +12,25 @@ struct RepositoryRow: View {
     let repo: Repository
     
     var body: some View {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(repo.name)
-                        .lineLimit(1)
-                        .font(.title)
-                    Text("Language: \(repo.language ?? "Unknown Language")")
-                    Text("Stars: \(repo.stars)")
-                    Text("\(repo.description ?? "repo description")")
-                        .lineLimit(1)
-                }
-                Spacer()
-                RemoteImage(url: repo.owner.userImage)
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.gray)
-                    .clipShape(Circle())
-                    .frame(width: 60, height: 60)
-                
+        HStack {
+            VStack(alignment: .leading) {
+                Text(repo.name)
+                    .lineLimit(1)
+                    .font(.title)
+                Text("Language: \(repo.language ?? "Unknown Language")")
+                Text("Stars: \(repo.stars)")
+                Text("\(repo.description ?? "repo description")")
+                    .lineLimit(1)
             }
-//        VStack(alignment: .leading) {
-//            Text(repo.name)
-//                .font(.title)
-//            Text("Language: \(repo.language ?? "Unknown Language")")
-//            Text("Stars: \(repo.stars)")
-//            Text("\(repo.description ?? "repo description")")
-//                .lineLimit(1)
-//        }
+            
+            Spacer()
+            
+            RemoteImage(url: repo.owner.userImage)
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(.gray)
+                .clipShape(Circle())
+                .frame(width: 60, height: 60)
+        }
     }
 }
 
